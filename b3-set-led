@@ -1,0 +1,57 @@
+#!/bin/sh
+
+rl=/sys/class/leds
+b="${rl}/bubba3:blue:active/brightness"
+g="${rl}/bubba3:green:programming/brightness"
+r="${rl}/bubba3:red:error/brightness"
+
+if ! [ $(id -u) = 0 ]; then
+   echo "b3-set-led must be run as root" 1>&2
+   exit 1
+fi
+
+case "$1" in
+off)
+	echo 0 > $r
+	echo 0 > $g
+	echo 0 > $b
+	;;
+red)
+	echo 1 > $r
+	echo 0 > $g
+	echo 0 > $b
+	;;
+blue)
+	echo 0 > $r
+	echo 0 > $g
+	echo 1 > $b
+	;;
+green)
+	echo 0 > $r
+	echo 1 > $g
+	echo 0 > $b
+	;;
+cyan)
+	echo 0 > $r
+	echo 1 > $g
+	echo 1 > $b
+	;;
+yellow)
+	echo 1 > $r
+	echo 1 > $g
+	echo 0 > $b
+	;;
+purple)
+	echo 1 > $r
+	echo 0 > $g
+	echo 1 > $b
+	;;
+white)
+	echo 1 > $r
+	echo 1 > $g
+	echo 1 > $b
+	;;
+*)
+	echo "Usage: b3-set-led [off|red|blue|green|cyan|yellow|purple|white]"
+	;;
+esac

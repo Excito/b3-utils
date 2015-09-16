@@ -1,0 +1,11 @@
+[Unit]
+Description=B3 status led service (start/shutdown)
+
+[Service]
+Type=OneShot
+RemainAfterExit=yes
+ExecStart=/usr/sbin/b3-set-led blue
+ExecStart=/usr/sbin/b3-set-led purple
+
+[Install]
+WantedBy=multi-user.target

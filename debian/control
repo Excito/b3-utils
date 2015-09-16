@@ -1,0 +1,14 @@
+Source: b3-utils
+Section: utils
+Priority: standard
+Maintainer: Charles Leclerc <leclerc.charles@gmail.com>
+Build-Depends: debhelper (>= 9), dh-systemd (>= 1.5), linux-libc-dev
+Standards-Version: 3.9.5
+Homepage: http://github.com/Excito/b3-utils
+Vcs-Git: https://github.com/Excito/b3-utils.git
+Vcs-Browser: http://github.com/Excito/b3-utils
+
+Package: b3-utils
+Architecture: armel
+Depends: ${shlibs:Depends}, ${misc:Depends}, bubba3-kernel (>= 3.18.21-1)
+Description: System utilities to manage specific B3 devices (LEDs and power button)

@@ -1,0 +1,10 @@
+[Unit]
+Description=B3 buttond service
+
+[Service]
+Type=forking
+PIDFile=/var/run/bubba-buttond.pid
+ExecStart=/usr/sbin/bubba-buttond
+
+[Install]
+WantedBy=multi-user.target
