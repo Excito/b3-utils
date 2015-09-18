@@ -1,0 +1,22 @@
+## Configuration file for bubba-status
+## Default values are shown commented, fell free
+## to uncomment and adjust them to your needs
+
+## Here are the color codes available :
+## off
+## blue
+## red
+## green
+## cyan
+## purple
+## yellow
+## white
+
+## Color to use on a running B3 
+## (will be set at the end of boot sequence)
+#B3_RUNNING_COLOR=blue
+
+## Color to use on a rebooting/halting B3 
+## (will be set at the start of reboot/halt sequence)
+#B3_REBOOT_COLOR=purple
+
