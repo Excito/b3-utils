@@ -5,7 +5,7 @@
 # Required-Stop:     $all
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: Led status for Excito Bubba|2/B3 platforms.
+# Short-Description: Led status for Excito B3 platform.
 ### END INIT INFO
 
 # Author: Charles Leclerc <leclerc.charles@gmail.com>

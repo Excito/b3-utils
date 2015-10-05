@@ -2,10 +2,10 @@
 ### BEGIN INIT INFO
 # Provides:          bubba-halt
 # Required-Start:    
-# Required-Stop:     $all
+# Required-Stop:     
 # Default-Start:     
 # Default-Stop:      0
-# Short-Description: Halt hook for Excito Bubba|2 and B3 platforms
+# Short-Description: Halt hook for Excito B3 platform
 ### END INIT INFO
 
 . /lib/lsb/init-functions
@@ -14,11 +14,9 @@
 
 case "$1" in
 	stop)
-		if [ -x /sbin/write-magic ] ; then
-			log_begin_msg "Setting B3 magic shutdown value"
-			/usr/sbin/write-magic
-			log_end_msg $?
-		fi
+		log_begin_msg "Setting B3 magic shutdown value"
+		/usr/sbin/write-magic
+		log_end_msg $?
 		;;
 	*)
 		echo "Usage: /etc/init.d/bubba-halt {stop}" >&2

@@ -1,0 +1,11 @@
+[Unit]
+Description=B3 shutdown hook
+DefaultDependencies=false
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/write-magic
+
+[Install]
+WantedBy=halt.target poweroff.target
