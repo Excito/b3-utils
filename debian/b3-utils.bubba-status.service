@@ -2,7 +2,7 @@
 Description=B3 status led service (start/shutdown)
 
 [Service]
-Type=OneShot
+Type=oneshot
 RemainAfterExit=yes
 ExecStart=/usr/sbin/b3-set-led blue
 ExecStop=/usr/sbin/b3-set-led purple
