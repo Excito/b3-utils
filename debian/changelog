@@ -1,8 +1,14 @@
-b3-utils (1.2) UNRELEASED; urgency=medium
+b3-utils (1.3) bullseye; urgency=medium
+
+  * Released version 1.3 for bullseye
+
+ -- Charles Leclerc <leclerc.charles@gmail.com>  Sun, 19 Dec 2021 19:12:50 +0000
+
+b3-utils (1.2) unstable; urgency=medium
 
   * Updated pid path in systemd service file
 
- -- Charles Leclerc <leclerc.charles@gmail.com>  Fri, 20 Nov 2020 15:08:50 +0000
+ -- Charles Leclerc <leclerc.charles@gmail.com>  Fri, 20 Nov 2020 19:21:23 +0000
 
 b3-utils (1.1+nmu1) buster; urgency=medium
 
