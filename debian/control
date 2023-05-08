@@ -2,7 +2,7 @@ Source: b3-utils
 Section: utils
 Priority: standard
 Maintainer: Charles Leclerc <leclerc.charles@gmail.com>
-Build-Depends: debhelper (>= 9), linux-libc-dev
+Build-Depends: debhelper (>= 10), linux-libc-dev
 Standards-Version: 3.9.5
 Homepage: http://github.com/Excito/b3-utils
 Vcs-Git: https://github.com/Excito/b3-utils.git

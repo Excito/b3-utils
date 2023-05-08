@@ -2,9 +2,9 @@
 Description=B3 buttond service
 
 [Service]
-Type=forking
+Type=simple
 PIDFile=/run/bubba-buttond.pid
-ExecStart=/usr/sbin/bubba-buttond
+ExecStart=systemd-inhibit --what=handle-power-key --who=bubba-buttond /usr/sbin/bubba-buttond -f
 
 [Install]
 WantedBy=multi-user.target
